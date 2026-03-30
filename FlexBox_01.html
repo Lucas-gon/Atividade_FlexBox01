@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Flexbox Concluído</title>
+    <style>
+        /* O CSS está aqui dentro agora, então não precisa de outro arquivo */
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .caixa-pai {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5e6d3; /* Bege da imagem */
+            width: 80%;
+            height: 400px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        .caixa {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: black;
+            font-size: 24px;
+        }
+
+        /* Cores e Posicionamento Específico */
+        .cor1 {
+            background-color: #ED145B; /* Rosa */
+            align-self: flex-start; 
+        }
+
+        .cor2 {
+            background-color: #63B1BC; /* Azul */
+            align-self: flex-end;
+        }
+
+        .cor3 {
+            background-color: #EFB661; /* Amarelo */
+            /* Centralizado automaticamente pelo align-items: center do pai */
+        }
+
+        h1 { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Caixa flexível Aula</h1>
+
+    <div class="caixa-pai">
+        <div class="caixa cor1">1</div>
+        <div class="caixa cor3">3</div>
+        <div class="caixa cor2">2</div>
+    </div>
+
+</body>
+</html>
